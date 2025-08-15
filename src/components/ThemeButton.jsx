@@ -1,5 +1,5 @@
 import { useTheme } from "../hooks/useTheme.js";
-import "../css/ThemeButton.css";
+import "@/css/ThemeButton.css";
 
 const ThemeButton = ({ className, onlyIcon}) => {
     const { theme, toggleTheme } = useTheme();

@@ -16,6 +16,8 @@ export const ThemeProvider = ({ children }) => {
     document.body.classList.add(theme);
     root.classList.remove("light", "dark");
     root.classList.add(theme);
+  // Make Bootstrap 5.3 components inherit the theme
+  root.setAttribute('data-bs-theme', theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 

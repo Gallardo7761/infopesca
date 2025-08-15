@@ -31,18 +31,27 @@
 ================================== */
 
 :root {
-
+  --bg-color: #0b1520;
+  --text-color: #e2e8f0;
+  --surface: #111827;
+  --surface-2: #0f172a;
 }
 
 /* Tema Claro */
 .light {
-
+  --bg-color: #f5f7fb;
+  --text-color: #0f172a;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
 }
 
 
 /* Tema Oscuro */
 .dark {
-  
+  --bg-color: #0b1520;
+  --text-color: #e2e8f0;
+  --surface: #111827;
+  --surface-2: #0f172a;
 }
 
 /* ================================
@@ -85,4 +94,17 @@ h5,
 h6 {
   font-family: "Product Sans", sans-serif;
   color: var(--text-color);
+}
+
+/* Map wrapper to add subtle border and background in both themes */
+.map-wrapper {
+  background: var(--surface);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Leaflet controls theming tweaks */
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  padding: 2px 6px;
 }
